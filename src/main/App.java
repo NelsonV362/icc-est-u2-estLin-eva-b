@@ -14,6 +14,22 @@ public class App {
     for(String nombre : reversa) {
         System.out.println(nombre);
     }
-    
+        //2ndo ejercicio
+    Queue<String> cola2= new LinkedList<>();
+    cola2.add("c");
+    cola2.add("a");
+        cola2.add("d");
+            cola2.add("r");
+            System.out.print("Segunda ejercicio:");
+            System.out.println(logica.verificar(cola2));
+            cola2.add("c");
+            cola2.add("a");
+            cola2.add("s");
+            cola2.add("s");
+            System.out.print("Segundo ejercicio");
+            System.out.println(logica.verificar(cola2));
+
+
+
     }
 }

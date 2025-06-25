@@ -1,7 +1,7 @@
 package main;
 
 import java.util.*;
-
+import main.App;
 public class LogicaClasificacion {
 
     /**
@@ -43,7 +43,21 @@ public class LogicaClasificacion {
      * @return nueva cola con elementos intercalados
      */
     public Queue<Integer> intercalarColas(Queue<Integer> cola1, Queue<Integer> cola2) {
-        return new LinkedList<>(Arrays.asList()); // Simulación de resultado
+        public boolean verificar(Queue<String> cola){
+            List<String> lista=new ArrayList<>(cola);
+            int i=0, j=lista.size()-1;
+            while (i<j) {
+                if(!lista.get(i).equals(lista.get(j))){
+                    return false;
+                }
+                i++;
+                j--;
+            }
+            
+        }
+        return true; 
+
     }
 
 }
+
