@@ -15,8 +15,16 @@ public class LogicaClasificacion {
      * @return nueva cola con los nombres en orden invertido
      */
     public Queue<String> invertirColaNombres(Queue<String> cola) {
-
-        return new LinkedList<>(Arrays.asList()); // Simulación de resultado
+    Stack<String> pila=new Stack<>();
+    Queue<String> Pega= new LinkedList<>(cola);
+    while(!Pega.isEmpty()){
+        pila.push(Pega.poll());
+    }
+    Queue<String>invertida=new LinkedList<>();
+    while(!pila.isEmpty()){
+        invertida.add(pila.pop());
+    }
+        return invertida; // Simulación de resultado
     }
 
     /**
