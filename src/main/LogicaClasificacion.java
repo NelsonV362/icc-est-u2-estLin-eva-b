@@ -24,7 +24,7 @@ public class LogicaClasificacion {
     while(!pila.isEmpty()){
         invertida.add(pila.pop());
     }
-        return invertida; // Simulación de resultado
+        return invertida; 
     }
 
     /**
