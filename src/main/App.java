@@ -10,8 +10,8 @@ public class App {
         cola1.add("Luis");
         cola1.add("Pedro");
     System.out.println("Ejercicio Ana-Pedro-Luis");
-    Queue<String>  invertida=logica.invertirColaNombres(cola1);
-    for(String nombre : invertida) {
+    Queue<String>  reversa=logica.invertirColaNombres(cola1);
+    for(String nombre : reversa) {
         System.out.println(nombre);
     }
     

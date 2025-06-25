@@ -20,11 +20,11 @@ public class LogicaClasificacion {
     while(!Pega.isEmpty()){
         pila.push(Pega.poll());
     }
-    Queue<String>invertida=new LinkedList<>();
+    Queue<String>reversa=new LinkedList<>();
     while(!pila.isEmpty()){
-        invertida.add(pila.pop());
+        reversa.add(pila.pop());
     }
-        return invertida; 
+        return reversa; 
     }
 
     /**
